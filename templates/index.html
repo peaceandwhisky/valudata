@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- Form
+================================================ -->
+<div class="form width-full">
+  <div class="topbox width-full">
+    <p class="topbox__p1">VALUER</p>
+    <p class="topbox__p2">応援したい人をみつけよう</p>
+  </div>
+  <div class="content">
+    <div class="headline">
+      <a class="headline__word" href="capitalrank/1">時価総額ランキング TOP3 {{today}}</a>
+    </div>
+    <!-- bmを模したコード -->
+    <div class="v-rank__content">
+      <ul class="v-rank-lists">
+        <!-- このliをループさせる -->
+        {% for num in message %}
+        <a>{{num['rank']|int}}</a>
+        <li class="v-rank-lists__item">
+          <div class="v-rank-lists__item-thumbnail" style="background: url({{num['imgurl']}}) center no-repeat; background-size: cover;">
+          </div>
+          <div class="v-rank-lists__item-details">
+            <div class="v-rank-lists__name">
+              <a class="v-rank-lists__name-link" href={{num['url']}} target="_blank">{{num['name']}}</a>
+            </div>
+            <div class="v-rank-list__capital">
+              <a>{{num['jika']}} BTC</a>
+            </div>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <!-- ランキングのリンク　下用 -->
+    <div class="button">
+      <div class="button__back">
+        <a class="button__word" href="/capitalrank/1">１～1000位を見る >
+      </div>
+    </div>
+    <div class="headline">
+      <a class="headline__word" href="">値上がり率ランキング</a>
+    </div>
+    <div class="headline__base">
+      <p>前日比ランキング 11月中旬公開予定</p>
+    </div>
+    <div class="headline">
+      <a class="headline__word" href="">優待更新情報</a>
+    </div>
+    <div class="headline__base">
+      <p>11月中旬 公開予定</p>
+    </div>
+    <div class="headline" >
+      <a class="headline__word" href="">初優待情報</a>
+    </div>
+    <div class="headline__base">
+      <p>11月中旬 公開予定</p>
+    </div>
+    <a>スポンサーリンク</a>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- valuer -->
+    <ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-7611852587780285"
+    data-ad-slot="2545725458"
+    data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+</div>
+{% endblock %}

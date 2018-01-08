@@ -1,0 +1,191 @@
+body {
+  background-color: #fdfdfd;
+  font-family: Quicksand, Yu Gothic, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+footer{
+  background-color: #EA2434;
+  text-align:center;
+  margin-top: 5px;
+  padding:10px 10px 40px;
+}
+
+footer a {
+  color:white;
+  text-decoration:none;
+}
+
+header {
+  background-color: white;
+  box-shadow:0px 0px 10px 1px #ccc;
+  -moz-box-shadow:0px 0px 10px 1px #ccc;
+  -webkit-box-shadow:0px 0px 10px 1px #ccc;
+  height:44px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+header h1 {
+  float: left;
+  font-weight: normal;
+  font-size: 1.5em;
+  margin-bottom: 0;
+  margin-left: 20px;
+  margin-right: auto;
+  margin-top: 3px;;
+}
+
+header a {
+  color:#EA2434;
+  text-decoration:none;
+}
+
+.form{
+  z-index: 1;
+  padding-top: 44px;
+}
+
+.width-full {
+  margin-left: auto;
+  margin-right: auto;
+  width:1024px;
+}
+.content{
+  padding:0px 8px 0px;
+}
+
+.topbox {
+  height: 300px;
+  background: #EA2434;
+  text-align: center;
+  padding-top:
+}
+.topbox__p1{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top:90px;
+  color: white;
+  font-size: 3em;
+}
+.topbox__p2{
+  margin-top: 5px;
+  color: white;
+
+}
+
+
+/*TOPページ用*/
+.headline{
+  font-feature-settings: "palt";
+  font-weight: bold;
+}
+.headline__word{
+  border-top: solid 1px #EA2434;
+  border-bottom:solid 1px #EA2434;
+  text-decoration: none;
+  color:black;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.headline__base{
+  padding-left: 10px;
+}
+
+.button{
+  text-align: center;
+  margin:10px 0px 10px;
+}
+.button__back{
+  position:relative;
+  display: inline-block;
+  font-weight: bold;
+  background-color: #EA2434;
+  text-align:center;
+  padding: 0.25em 0.5em;
+  transition: .4s;
+  margin: auto;
+}
+
+.button__word{
+  color:white;
+  text-decoration: none;
+}
+
+
+/* ランキング用のCSS */
+html, body, div, span, object, iframe, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure,hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.v-rank-lists {
+  border-top: 1px solid #dcdcdc;
+  color: #333;
+  line-height: 1.5;
+}
+
+.v-rank-lists__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid #dcdcdc;
+}
+ul li {
+  list-style: none;
+}
+.v-rank-lists__item-thumbnail{
+  width: 75px;
+  border-right: 1px solid #dcdcdc;
+}
+.v-rank-lists__item-details {
+  -webkit-box-flex:1;
+  -webkit-flex: 1 1 0%;
+  -moz-box-flex: 1;
+  -moz-flex: 1 1 0%;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+  min-width: 0;
+  padding: 5px 5px 5px 10px;
+  border-left:1px solid #fff;
+}
+.v-rank-list__name-link{
+  fornt-weight: normal;
+  word-wrap: : break-word;
+  overflow-wrap: break-word;
+  overflow: hidden;
+}
+.v-rank-lists__name-link{
+  color:black;
+}
+/* ランキング用CSSここまで */
+
+@media screen and (max-width:1024px) {
+  .width-full {
+    width: 768px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .width-full {
+    width: 100%;
+  }
+  .headline{
+    margin-top:8px;
+    font-size: 18px;
+    margin-bottom:8px;
+  }
+}
+
+@media screen and (max-width:425px) {
+}

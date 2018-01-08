@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-87972162-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-87972162-2');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "format-detection" content = "telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="VALUERはVALUをよりよい場所にしてゆく、VALU利用者のための情報支援サイトです。時価総額ランキング、新規優待情報等">
+    <title>VALUER</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view th page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      <div class="width-full">
+        <h1><a href="/">VALUER</a></h1>
+      </div>
+    </header>
+    {% block content %}{% endblock %}
+    <footer>
+      <div class="width-full">
+        <p>
+          <a href="https://twitter.com/peaceandwhisky" target="_blank">twitter</a>
+           |
+          <a href="/disclaimer">免責事項</a>
+        </p>
+      </div>
+    </footer>
+</html>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBqa-7vvlEGeg5sQOGLt1-Y1ZHYcGcqDWQ",
+    authDomain: "valutest-fd0b5.firebaseapp.com",
+    databaseURL: "https://valutest-fd0b5.firebaseio.com",
+    projectId: "valutest-fd0b5",
+    storageBucket: "valutest-fd0b5.appspot.com",
+    messagingSenderId: "749226384670"
+  };
+  firebase.initializeApp(config);
+</script>
